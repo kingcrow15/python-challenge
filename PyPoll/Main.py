@@ -4,7 +4,7 @@ from datetime import datetime
 from dateutil import relativedelta
 from collections import defaultdict
 
-election_file_path = os.path.join(os.path.expanduser("~"), "Documents", "GitHub", "python-challenge", "election_data_copy.csv")
+election_file_path = os.path.join(os.path.expanduser("~"), "Documents", "GitHub", "python-challenge", "PyPoll", "Resources", "election_data.csv")
 
 
 def get_election_stats(file_path):

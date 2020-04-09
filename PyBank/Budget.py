@@ -3,9 +3,8 @@ import csv
 from datetime import datetime
 from dateutil import relativedelta
 from collections import defaultdict
-
-budget_file_path = os.path.join(os.path.expanduser("~"), "Desktop", "budget_data_copy.csv")
-
+os.getcwd()
+budget_file_path = os.path.abspath("C:/Users/Kingcrow/Documents/GitHub/python-challenge/PyBank/Resources/budget_data_copy.csv")
 
 def get_date(date):
     try:
@@ -58,3 +57,4 @@ def get_budget_stats(file_path):
         print("Average profit/loss: {}".format(total / count))
         print("Largest increase was {} on {}".format(largest_increase, increase_date))
         print("Largest decrease was {} on {}".format(largest_decrease, decrease_date))
+get_budget_stats(budget_file_path)
